@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<Pane fx:id="loginPane" prefHeight="300.0" prefWidth="267.0"
+      fx:controller="com.chun.gr.java.controller.SignInContoller"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml">
+
+    <children>
+        <ImageView fitHeight="315.0" fitWidth="281.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../res/img/login_Image.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="signUpBtn" layoutX="150.0" layoutY="261.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="119.0" text="회원가입">
+            <effect>
+                <ImageInput>
+                    <source>
+                        <Image url="@../../res/img/SignUP_Image.png" />
+                    </source>
+                </ImageInput>
+            </effect></Button>
+        <TextField fx:id="loginIdTb" layoutX="70.0" layoutY="89.0" promptText="아이디" />
+        <PasswordField fx:id="loginPwTb" layoutX="70.0" layoutY="142.0" promptText="비밀번호" />
+        <Button fx:id="loginBtn" layoutX="11.0" layoutY="261.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="119.0" text="로그인">
+            <effect>
+                <ImageInput>
+                    <source>
+                        <Image url="@../../res/img/GameStart_Image.png" />
+                    </source>
+                </ImageInput>
+            </effect></Button>
+        <Label layoutX="32.0" layoutY="93.0" text="ID:" />
+        <Label layoutX="35.0" layoutY="146.0" text="PW:" />
+        <Label fx:id="loginWarningLbl" layoutX="29.0" layoutY="192.0" prefHeight="35.0" prefWidth="213.0" text="아이디 또는 비밀번호를 잘 못 입력하셨습니다" />
+    </children>
+</Pane>
