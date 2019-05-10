@@ -20,18 +20,15 @@ public class SignUpController implements Initializable {
     @FXML
     TextField signUpSnTb;
     @FXML
-    CheckBox signUpCb;
-    @FXML
-    Button confirmBtn;
-    @FXML
-    Label signUpWarningLbl;
-    @FXML
     Button signUP_Overlap_Btn;
-    @FXML
-    Button cancleBtn;
+
+    private SignController signController;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+    }
+    public void setParentController(SignController signController){
+        this.signController = signController;
     }
 }
