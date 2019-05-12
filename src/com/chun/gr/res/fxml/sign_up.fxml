@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="signUpPane" prefHeight="160.0" prefWidth="292.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.SignUpController">
+<AnchorPane fx:id="signUpPane" prefHeight="247.0" prefWidth="292.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.SignUpController">
     <children>
         <Label layoutX="21.0" layoutY="18.0" text="ID:" />
         <Label layoutX="18.0" layoutY="58.0" text="PW:" />
@@ -21,5 +21,7 @@
         <TextField fx:id="signUpNmTb" layoutX="54.0" layoutY="89.0" prefHeight="23.0" prefWidth="148.0" promptText="이름" />
         <TextField fx:id="signUpSnTb" layoutX="54.0" layoutY="124.0" prefHeight="23.0" prefWidth="148.0" promptText="학번" />
         <Button fx:id="signUP_Overlap_Btn" layoutX="202.0" layoutY="14.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="64.0" text="중복확인" />
+        <Button fx:id="loginBtn" layoutX="24.0" layoutY="193.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="102.0" />
+        <Button fx:id="signUpBtn" layoutX="161.0" layoutY="193.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="102.0" textAlignment="CENTER" />
     </children>
 </AnchorPane>
