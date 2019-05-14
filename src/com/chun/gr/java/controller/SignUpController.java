@@ -7,7 +7,6 @@ import javafx.beans.property.SimpleBooleanProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 
 import java.net.URL;
@@ -33,7 +32,7 @@ public class SignUpController implements Initializable {
 
     private SignController signController;
 
-    private BooleanProperty state = new SimpleBooleanProperty();
+    private BooleanProperty toggle = new SimpleBooleanProperty();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -45,22 +44,22 @@ public class SignUpController implements Initializable {
         });
 
         signUpBtn.setOnAction(event -> {
-            setState(!getState());
+            setToggle(!getToggle());
         });
     }
     public void setParentController(SignController signController){
         this.signController = signController;
     }
 
-    public boolean getState() {
-        return state.get();
+    public boolean getToggle() {
+        return toggle.get();
     }
 
-    public BooleanProperty stateProperty() {
-        return state;
+    public BooleanProperty toggleProperty() {
+        return toggle;
     }
 
-    public void setState(boolean state) {
-        this.state.set(state);
+    public void setToggle(boolean state) {
+        this.toggle.set(state);
     }
 }
