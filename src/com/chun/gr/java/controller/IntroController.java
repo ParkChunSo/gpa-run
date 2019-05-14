@@ -1,5 +1,7 @@
 package com.chun.gr.java.controller;
 
+import com.chun.gr.java.model.enums.ImageNm;
+import com.chun.gr.java.util.ImageUtils;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,8 +26,7 @@ public class IntroController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
-            Image img = new Image(getClass().getResource("../../res/img/Login_Page_Image.png").toString());
-            stackPane.setBackground(new Background(new BackgroundImage(img, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT,BackgroundPosition.CENTER, new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, false, true))));
+            stackPane.setBackground(ImageUtils.setBackgroundImage(ImageNm.Login_Page_Image));
             signPane = FXMLLoader.load(getClass().getResource("../../res/fxml/sign.fxml"));
             ObservableList<Node> children = stackPane.getChildren();
             children.add(signPane);

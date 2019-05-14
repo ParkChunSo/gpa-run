@@ -1,5 +1,7 @@
 package com.chun.gr.java.controller;
 
+import com.chun.gr.java.model.enums.ImageNm;
+import com.chun.gr.java.util.ImageUtils;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -45,8 +47,8 @@ public class SignInController implements Initializable {
             setState(!getState());
         });
 
-        loginBtn.setBackground(new Background(new BackgroundImage(new Image(getClass().getResource("../../res/img/GameStart_Image.png").toString()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, false, true))));
-        signUpBtn.setBackground(new Background(new BackgroundImage(new Image(getClass().getResource("../../res/img/SignUP_Image.png").toString()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, false, true))));
+        loginBtn.setBackground(ImageUtils.setBackgroundImage(ImageNm.GameStart_Image));
+        signUpBtn.setBackground(ImageUtils.setBackgroundImage(ImageNm.SignUP_Image));
     }
 
     public boolean getState() {

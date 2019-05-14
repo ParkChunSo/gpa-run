@@ -1,5 +1,7 @@
 package com.chun.gr.java.controller;
 
+import com.chun.gr.java.model.enums.ImageNm;
+import com.chun.gr.java.util.ImageUtils;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.fxml.FXML;
@@ -35,8 +37,8 @@ public class SignUpController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        loginBtn.setBackground(new Background(new BackgroundImage(new Image(getClass().getResource("../../res/img/SignUP_Image.png").toString()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, false, true))));
-        signUpBtn.setBackground(new Background(new BackgroundImage(new Image(getClass().getResource("../../res/img/Cancel_Image.png").toString()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, false, true))));
+        loginBtn.setBackground(ImageUtils.setBackgroundImage(ImageNm.SignUP_Image));
+        signUpBtn.setBackground(ImageUtils.setBackgroundImage(ImageNm.Cancel_Image));
 
         loginBtn.setOnAction(event ->{
             //TODO(회원가입 로직 작성)

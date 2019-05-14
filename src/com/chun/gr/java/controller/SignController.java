@@ -1,5 +1,7 @@
 package com.chun.gr.java.controller;
 
+import com.chun.gr.java.model.enums.ImageNm;
+import com.chun.gr.java.util.ImageUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.Image;
@@ -18,8 +20,7 @@ public class SignController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Image img = new Image(getClass().getResource("../../res/img/login_Image.png").toString());
-        signPane.setBackground(new Background(new BackgroundImage(img, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, false, true))));
+        signPane.setBackground(ImageUtils.setBackgroundImage(ImageNm.login_Image));
 
         signInController.setParentController(this);
         signUpController.setParentController(this);
@@ -30,13 +31,14 @@ public class SignController implements Initializable {
 
     private void changeIn2Up(){
         signPane.getChildren().forEach(node -> {
-            if(node.getId().equals("loginPane")){
-                node.setVisible(false);
-            } else if(node.getId().equals("signUpPane")){
+            if(node.getId().equals("signUpPane")){
                 node.setVisible(true);
+            } else if(node.getId().equals("loginPane")){
+                node.setVisible(false);
             }
         });
     }
+
     private void changeUp2In(){
         signPane.getChildren().forEach(node -> {
             if(node.getId().equals("loginPane")){
