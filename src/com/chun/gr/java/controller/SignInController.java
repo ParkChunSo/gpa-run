@@ -1,7 +1,7 @@
 package com.chun.gr.java.controller;
 
 import com.chun.gr.java.model.enums.ImageNm;
-import com.chun.gr.java.util.ImageUtils;
+import com.chun.gr.java.util.ResourceUtil;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -19,13 +19,13 @@ import java.util.ResourceBundle;
 
 public class SignInController implements Initializable {
     @FXML
-    Pane loginPane;
+    private Pane loginPane;
     @FXML
-    TextField loginIdTb;
+    private TextField loginIdTb;
     @FXML
-    PasswordField loginPwTb;
+    private PasswordField loginPwTb;
     @FXML
-    Label loginWarningLbl;
+    private Label loginWarningLbl;
     @FXML
     private Button loginBtn;
     @FXML
@@ -48,8 +48,8 @@ public class SignInController implements Initializable {
             setToggle(!getToggle());
         });
 
-        loginBtn.setBackground(ImageUtils.setBackgroundImage(ImageNm.GameStart_Image));
-        signUpBtn.setBackground(ImageUtils.setBackgroundImage(ImageNm.SignUP_Image));
+        loginBtn.setBackground(ResourceUtil.getBackgroundImage(ImageNm.GameStart_Image));
+        signUpBtn.setBackground(ResourceUtil.getBackgroundImage(ImageNm.SignUP_Image));
     }
 
     public boolean getToggle() {

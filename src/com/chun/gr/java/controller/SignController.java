@@ -1,17 +1,13 @@
 package com.chun.gr.java.controller;
 
-import com.chun.gr.java.model.enums.FxmlNm;
 import com.chun.gr.java.model.enums.ImageNm;
-import com.chun.gr.java.util.ImageUtils;
 import com.chun.gr.java.util.ResourceUtil;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.layout.*;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -23,11 +19,12 @@ public class SignController implements Initializable {
     @FXML
     private SignUpController signUpController;
     private IntroController introController;
-    BooleanProperty toggle = new SimpleBooleanProperty();
+
+    private BooleanProperty toggle = new SimpleBooleanProperty();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        signPane.setBackground(ImageUtils.setBackgroundImage(ImageNm.login_Image));
+        signPane.setBackground(ResourceUtil.getBackgroundImage(ImageNm.login_Image));
 
         signInController.setParentController(this);
         signUpController.setParentController(this);

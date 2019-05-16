@@ -5,10 +5,10 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:id="Information_pane" maxHeight="-Infinity" maxWidth="-Infinity"
+<StackPane fx:id="guidePane" maxHeight="-Infinity" maxWidth="-Infinity"
       minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
       prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.chun.gr.java.controller.InformationContoller">
+      fx:controller="com.chun.gr.java.controller.GuideController">
     <children>
         <ImageView fitHeight="500.0" fitWidth="800.0" pickOnBounds="true">
             <image>
@@ -150,4 +150,4 @@
             </children>
         </Pane>
     </children>
-</Pane>
+</StackPane>

@@ -1,4 +1,4 @@
-package com.chun.gr.java.model;
+package com.chun.gr.java.model.dtos;
 
 public class SignUpDto {
     private String id;

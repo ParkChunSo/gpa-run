@@ -20,7 +20,7 @@ public class ResourceUtil {
         sb.append(".png");
         return new Background(
                 new BackgroundImage(
-                        new Image(ImageUtils.class.getResource(sb.toString()).toString())
+                        new Image(ResourceUtil.class.getResource(sb.toString()).toString())
                         , BackgroundRepeat.NO_REPEAT
                         , BackgroundRepeat.NO_REPEAT
                         , BackgroundPosition.CENTER
@@ -35,4 +35,18 @@ public class ResourceUtil {
         sb.append(".fxml");
         return FXMLLoader.load(Objects.requireNonNull(ResourceUtil.class.getResource(sb.toString())));
     }
+
+    public static void changePage(StackPane root,StackPane prePane, FxmlNm fxmlNm){
+        StringBuilder sb = new StringBuilder(FXML_PATH);
+        sb.append(fxmlNm.name());
+        sb.append(".fxml");
+
+        try {
+            root.getChildren().remove(prePane);
+            root.getChildren().add(FXMLLoader.load(Objects.requireNonNull(ResourceUtil.class.getResource(sb.toString()))));
+        } catch (IOException e){
+            System.out.println(e.getMessage());
+        }
+    }
+
 }
