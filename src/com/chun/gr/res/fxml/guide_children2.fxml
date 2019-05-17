@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<StackPane fx:id="stackPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.GuideChildrenController">
-    <Button fx:id="nextBtn" mnemonicParsing="false" prefHeight="55.0" prefWidth="142.0" text="Button" />
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<StackPane fx:id="children2" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.GuideChildrenController2">
+    <children>
+        <ImageView fitHeight="79.0" fitWidth="36.0" layoutX="165.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../res/img/Jelly_Image.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../res/img/inform_run1.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="386.0" fitWidth="500.0" layoutX="339.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../res/img/Information2.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="nextBtn" layoutX="484.0" layoutY="341.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="142.0" text="Button">
+            <effect>
+                <ImageInput>
+                    <source>
+                        <Image url="@../../res/img/Yes_btn.png" />
+                    </source>
+                </ImageInput>
+            </effect>
+        </Button>
+    </children>
 </StackPane>
