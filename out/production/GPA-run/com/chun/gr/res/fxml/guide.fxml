@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<StackPane fx:id="guidePane" maxHeight="-Infinity" maxWidth="-Infinity"
+           minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+           prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.chun.gr.java.controller.GuideController">
+    <children>
+        <fx:include maxHeight="200" maxWidth="200" fx:id="children1" source="guide_children1.fxml"/>
+        <fx:include fx:id="children2" source="guide_children2.fxml" visible="false"/>
+        <fx:include fx:id="children3" source="guide_children3.fxml" visible="false"/>
+        <fx:include fx:id="children4" source="guide_children4.fxml" visible="false"/>
+        <fx:include fx:id="children5" source="guide_children5.fxml" visible="false"/>
+        <fx:include fx:id="children6" source="guide_children6.fxml" visible="false"/>
+    </children>
+</StackPane>
