@@ -5,7 +5,8 @@
 <?import javafx.scene.effect.ImageInput?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<StackPane fx:id="children4" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.GuideChildrenController4">
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="children4" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.GuideChildrenController4">
     <children>
         <ImageView fitHeight="386.0" fitWidth="500.0" layoutX="354.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -32,5 +33,5 @@
             </effect>
         </Button>
     </children>
-</StackPane>
+</AnchorPane>
 
