@@ -1,4 +1,4 @@
-package com.chun.gr.java.controller;
+package com.chun.gr.java.fxml_controller;
 
 import com.chun.gr.java.model.enums.ImageNm;
 import com.chun.gr.java.util.ResourceUtil;

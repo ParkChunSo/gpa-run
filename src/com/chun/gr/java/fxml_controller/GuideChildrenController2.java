@@ -1,4 +1,4 @@
-package com.chun.gr.java.controller;
+package com.chun.gr.java.fxml_controller;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;

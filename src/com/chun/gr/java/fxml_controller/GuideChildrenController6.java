@@ -1,4 +1,4 @@
-package com.chun.gr.java.controller;
+package com.chun.gr.java.fxml_controller;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
@@ -9,7 +9,7 @@ import javafx.scene.control.Button;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class GuideChildrenController3 implements Initializable {
+public class GuideChildrenController6 implements Initializable {
     @FXML
     private Button nextBtn;
     private BooleanProperty toggle = new SimpleBooleanProperty();

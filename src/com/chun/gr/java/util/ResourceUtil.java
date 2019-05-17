@@ -1,18 +1,21 @@
 package com.chun.gr.java.util;
 
+import com.chun.gr.java.model.enums.BgmNm;
 import com.chun.gr.java.model.enums.FxmlNm;
 import com.chun.gr.java.model.enums.ImageNm;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 
 import java.io.IOException;
 import java.util.Objects;
 
 public class ResourceUtil {
-    public static String IMAGE_PATH = "../../res/img/";
-    public static String FXML_PATH = "../../res/fxml/";
+    private static String IMAGE_PATH = "../../res/img/";
+    private static String FXML_PATH = "../../res/fxml/";
+    private static String BGM_PATH = "../../res/bgm/";
 
     public static Background getBackgroundImage(ImageNm imageNm){
         StringBuilder sb = new StringBuilder(IMAGE_PATH);
@@ -41,6 +44,12 @@ public class ResourceUtil {
         } catch (IOException e){
             e.printStackTrace();
         }
+    }
+
+    public static MediaPlayer getBackgroundMusic(BgmNm bgm){
+        StringBuilder sb = new StringBuilder(BGM_PATH);
+        sb.append(bgm); sb.append(".mp3");
+        return new MediaPlayer(new Media(ResourceUtil.class.getResource(sb.toString()).toString()));
     }
 
 }
