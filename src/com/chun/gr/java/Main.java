@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("../res/fxml/intro.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../res/fxml/root.fxml"));
         primaryStage.setTitle("GPA-RUN");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

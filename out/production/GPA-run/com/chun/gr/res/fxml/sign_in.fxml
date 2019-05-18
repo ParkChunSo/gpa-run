@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane fx:id="loginPane" prefHeight="256.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.SignInController">
+<Pane fx:id="loginPane" prefHeight="256.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.fxml_controller.SignInController">
 
     <children>
         <TextField fx:id="loginIdTb" layoutX="75.0" layoutY="31.0" promptText="아이디" />

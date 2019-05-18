@@ -23,20 +23,6 @@ public class IntroController implements Initializable {
             introPane.setBackground(ResourceUtil.getBackgroundImage(ImageNm.Login_Page_Image));
 
             signController.setParentController(this);
-            signController.toggleProperty().addListener((observable, oldValue, newValue) -> changeGuidePage());
+            signController.toggleProperty().addListener((observable, oldValue, newValue) -> ResourceUtil.changePage((StackPane) introPane.getScene().getRoot(), introPane, FxmlNm.game_test));
     }
-
-    private void changeGuidePage(){
-//        try {
-//            Parent guideParent = ResourceUtil.getParent(FxmlNm.guide);
-//            Parent introParent = introPane.getScene().getRoot();
-//            ((StackPane) introParent).getChildren().clear();
-//            ((StackPane) introParent).getChildren().remove(introPane);
-//            ((StackPane) introParent).getChildren().add(guideParent);
-//        } catch (IOException e){
-//            System.out.println(e.getMessage());
-//        }
-        ResourceUtil.changePage((StackPane) introPane.getScene().getRoot(), introPane, FxmlNm.guide);
-    }
-
 }

@@ -2,7 +2,7 @@
 
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="signPane" layoutX="200.0" layoutY="200.0" prefHeight="300.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.SignController">
+<AnchorPane fx:id="signPane" layoutX="200.0" layoutY="200.0" prefHeight="300.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.fxml_controller.SignController">
    <children>
        <fx:include fx:id="signIn" source="sign_in.fxml" />
        <fx:include fx:id="signUp" source="sign_up.fxml" visible="false" />

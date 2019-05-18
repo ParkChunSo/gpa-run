@@ -6,7 +6,7 @@
 <?import javafx.scene.effect.ImageInput?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane fx:id="children6" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.GuideChildrenController6">
+<AnchorPane fx:id="children6" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.fxml_controller.GuideChildrenController6">
     <children>
         <Button fx:id="nextBtn" layoutX="288.0" layoutY="244.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="208.0" text="Button">
             <effect>

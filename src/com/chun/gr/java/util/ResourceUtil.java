@@ -32,6 +32,13 @@ public class ResourceUtil {
         );
     }
 
+    public static Image getImage(ImageNm imageNm){
+        StringBuilder sb = new StringBuilder(IMAGE_PATH);
+        sb.append(imageNm.name());
+        sb.append(".png");
+        return new Image(ResourceUtil.class.getResource(sb.toString()).toString());
+    }
+
     public static void changePage(StackPane root,StackPane prePane, FxmlNm fxmlNm){
         StringBuilder sb = new StringBuilder(FXML_PATH);
         sb.append(fxmlNm.name());

@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="가이드 화면 구현 완료" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="가이드 화면 구현 완료">
+      <change afterPath="$PROJECT_DIR$/src/com/chun/gr/java/model/constants/GameConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/EndingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/GameContrller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/GuideChildrenController1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/GuideChildrenController2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/GuideChildrenController3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/GuideChildrenController4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/GuideChildrenController5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/GuideChildrenController6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/GuideController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/IntroController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/SignController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/SignInController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/controller/SignUpController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/model/enums/FxmlNm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/model/enums/FxmlNm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/model/enums/ImageNm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/model/enums/ImageNm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/util/ResourceUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/java/util/ResourceUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/ending.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/ending.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children4.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children5.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children6.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/guide_children6.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/intro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/intro.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/sign.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/sign.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/sign_in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/sign_in.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/sign_up.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GPA-run/com/chun/gr/res/fxml/sign_up.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chun/gr/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chun/gr/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/IntroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/IntroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chun/gr/java/model/enums/FxmlNm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chun/gr/java/model/enums/FxmlNm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chun/gr/java/model/enums/ImageNm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chun/gr/java/model/enums/ImageNm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chun/gr/java/util/ResourceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chun/gr/java/util/ResourceUtil.java" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,24 +100,24 @@
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="64" />
-          <entry key="JAVA" value="117" />
-          <entry key="XML" value="61" />
+          <entry key="JAVA" value="130" />
+          <entry key="XML" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5261" />
+          <entry key="JAVA" value="6031" />
           <entry key="PLAIN_TEXT" value="173" />
-          <entry key="XML" value="559" />
+          <entry key="XML" value="603" />
         </counts>
       </usages-collector>
     </session>
@@ -91,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="68" lean-forward="true" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+            <state relative-caret-position="399">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,21 +139,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/util/GameUtil.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/constants/GameConstant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="114">
+              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/game.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/enums/FxmlNm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+            <state relative-caret-position="57">
+              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -122,64 +160,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/util/ResourceUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="325">
+              <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/enums/BgmNm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/StateModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-              <folding>
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/MapModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -211,11 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/chun/gr/java/view/information_page.fxml" />
-        <option value="$PROJECT_DIR$/src/com/chun/gr/java/view/game_page.fxml" />
-        <option value="$PROJECT_DIR$/src/com/chun/gr/java/view/ending_page.fxml" />
-        <option value="$PROJECT_DIR$/src/com/chun/gr/java/view/login_page.fxml" />
-        <option value="$PROJECT_DIR$/src/com/chun/gr/java/view/sign_up.fxml" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/view/sign_in.fxml" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/view/SignIn.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/controller/SignIn.java" />
@@ -232,10 +212,8 @@
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/util/BgmUtils.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/util/ImageUtils.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/model/enums/BgmNm.java" />
-        <option value="$PROJECT_DIR$/src/com/chun/gr/java/Main.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/controller/SignUpController.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/controller/SignInController.java" />
-        <option value="$PROJECT_DIR$/src/com/chun/gr/java/model/enums/FxmlNm.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/res/fxml/intro.fxml" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/controller/IntroController.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/controller/GuideChildrenController.java" />
@@ -246,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/controller/GuideChildrenController5.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/controller/GuideChildrenController6.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/controller/GuideController.java" />
-        <option value="$PROJECT_DIR$/src/com/chun/gr/java/model/enums/ImageNm.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide.fxml" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide_children2.fxml" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide_children3.fxml" />
@@ -259,9 +236,17 @@
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/util/GameUtil.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/model/StateModel.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/model/MapModel.java" />
-        <option value="$PROJECT_DIR$/src/com/chun/gr/java/util/ResourceUtil.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GameContrller.java" />
+        <option value="$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GuideController.java" />
+        <option value="$PROJECT_DIR$/src/com/chun/gr/java/model/enums/ImageNm.java" />
+        <option value="$PROJECT_DIR$/src/com/chun/gr/java/util/ResourceUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/chun/gr/res/fxml/game_test.fxml" />
+        <option value="$PROJECT_DIR$/src/com/chun/gr/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/chun/gr/res/fxml/root.fxml" />
+        <option value="$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/IntroController.java" />
+        <option value="$PROJECT_DIR$/src/com/chun/gr/java/model/enums/FxmlNm.java" />
         <option value="$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GameController.java" />
+        <option value="$PROJECT_DIR$/src/com/chun/gr/java/model/constants/GameConstant.java" />
       </list>
     </option>
   </component>
@@ -272,7 +257,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -286,22 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="GPA-run" type="58d84e3e:PackageViewProjectNode" />
-              <item name="GPA-run" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="GPA-run" type="58d84e3e:PackageViewProjectNode" />
-              <item name="GPA-run" type="616d4139:PackageViewModuleNode" />
-              <item name="com.chun.gr" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -387,6 +356,15 @@
               <item name="gr" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GPA-run" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GPA-run" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gr" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="dtos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -425,6 +403,22 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GPA-run" type="58d84e3e:PackageViewProjectNode" />
+              <item name="GPA-run" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="GPA-run" type="58d84e3e:PackageViewProjectNode" />
+              <item name="GPA-run" type="616d4139:PackageViewModuleNode" />
+              <item name="com.chun.gr" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,7 +431,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558100876708" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558162388511" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
@@ -558,6 +552,7 @@
       <workItem from="1558004229689" duration="60000" />
       <workItem from="1558068459969" duration="5611000" />
       <workItem from="1558091451576" duration="7204000" />
+      <workItem from="1558152858986" duration="7702000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1556870570748</created>
@@ -640,13 +635,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71930000" />
+    <option name="totallyTimeSpent" value="79632000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18070363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.37417942" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.32995737" />
       <window_info id="Designer" order="3" />
@@ -701,20 +696,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="가이드 화면 구현 완료" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GuideController.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="guidePane.getChildren()" language="JAVA" />
-        <watch expression="ResourceUtil.class.getClassLoader().getResource(&quot;../../res/fxml/intro.fxml&quot;)" language="JAVA" />
+        <watch expression="guidePane.getScene()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -724,6 +708,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>guidePane.getScene()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>rootPane.getScene()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>guidePane.getChildren()</expression-string>
         <language-id>JAVA</language-id>
@@ -764,40 +758,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>children.get(0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/beans/property/BooleanPropertyBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/layout/Pane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/img/Information3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/img/Information4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/img/F_High_Image.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/img/F_under_Image.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/img/Game_Start_btn.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -816,83 +779,40 @@
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/img/Information1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/IntroController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/enums/ImageNm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="85" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GuideController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" column="91" selection-start-line="31" selection-start-column="91" selection-end-line="31" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/intro.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/img/Information2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide_children3.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide_children4.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide_children5.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide_children6.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GuideChildrenController2.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -905,20 +825,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide_children2.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="11" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide_children1.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GuideChildrenController1.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -984,39 +904,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/img/Information5.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/StateModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/enums/BgmNm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1024,20 +911,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/util/ResourceUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/StateModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="342">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/util/GameUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -1048,10 +929,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GameController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/enums/ImageNm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/util/GameUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="68" lean-forward="true" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/guide.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/game_test.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/root.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GuideController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/EndingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/IntroController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/enums/FxmlNm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/util/ResourceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/fxml_controller/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1059,10 +1029,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/game.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="-152">
+          <caret line="10" column="169" lean-forward="true" selection-start-line="10" selection-start-column="169" selection-end-line="10" selection-end-column="204" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/res/fxml/intro.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="65" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="65" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chun/gr/java/model/constants/GameConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
         </state>
       </provider>
     </entry>

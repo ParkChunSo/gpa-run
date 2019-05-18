@@ -2,7 +2,7 @@
 
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane fx:id="introPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.controller.IntroController">
+<StackPane fx:id="introPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chun.gr.java.fxml_controller.IntroController">
    <children>
       <fx:include fx:id="sign" maxHeight="200" maxWidth="200" source="sign.fxml" StackPane.alignment="BOTTOM_RIGHT" />
    </children>
