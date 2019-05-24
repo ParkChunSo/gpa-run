@@ -28,8 +28,8 @@ public class PlayController {
         backgroundAnimationThread2.play();
     }
 
-    public Animation getCharacterAnimation(ImageView characterImageView){
-        characterImageView.setViewport(new Rectangle2D(0,0, GameConstant.CHARACTER_RUN_IMAGE_WIDTH, GameConstant.CHARACTER_RUN_IMAGE_HEIGHT));
-
-    }
+//    public Animation getCharacterAnimation(ImageView characterImageView){
+//        characterImageView.setViewport(new Rectangle2D(0,0, GameConstant.CHARACTER_RUN_IMAGE_WIDTH, GameConstant.CHARACTER_RUN_IMAGE_HEIGHT));
+//
+//    }
 }
