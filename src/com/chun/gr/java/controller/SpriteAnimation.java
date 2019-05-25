@@ -7,10 +7,11 @@ import javafx.animation.Animation;
 import javafx.animation.Interpolator;
 import javafx.animation.Transition;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;
 
-public class SpriteController extends Transition {
+public class SpriteAnimation extends Transition {
     private int count;
     private int columns;
     private int offsetX;
@@ -20,7 +21,7 @@ public class SpriteController extends Transition {
     private int lastIndex;
     private ImageView characterImageView;
 
-    public SpriteController(ImageView characterImageView) {
+    public SpriteAnimation(ImageView characterImageView) {
         this.characterImageView = characterImageView;
         this.count = 6;
         this.columns = 3;
@@ -31,7 +32,7 @@ public class SpriteController extends Transition {
 
         this.characterImageView.setFitWidth(GameConstant.CHARACTER_RUN_IMAGE_WIDTH);
         this.characterImageView.setFitHeight(GameConstant.CHARACTER_RUN_IMAGE_HEIGHT);
-        this.characterImageView.relocate(GameConstant.CHARACTER_IMAGEVIEW_X, GameConstant.CHARACTER_IMAGEVIEW_Y);
+        this.characterImageView.relocate(GameConstant.CHARACTER_RUN_LAYOUT_X, GameConstant.CHARACTER_RUN_LAYOUT_Y);
         this.characterImageView.setImage(ResourceUtil.getImage(ImageNm.Character_Run_Image));
         this.characterImageView.setViewport(new Rectangle2D(0,0, GameConstant.CHARACTER_IMAGE_SPRITE_WIDTH, GameConstant.CHARACTER_IMAGE_SPRITE_HEIGHT));
 
@@ -40,7 +41,21 @@ public class SpriteController extends Transition {
         this.setCycleCount(Animation.INDEFINITE);
     }
 
+    public void setOtherMotion(Image img, int x, int y, int width, int height){
+        this.characterImageView.setFitWidth(width);
+        this.characterImageView.setFitHeight(height);
+        this.characterImageView.relocate(x, y);
+        this.characterImageView.setImage(img);
+    }
+    public void setRunMotion(){
+        this.characterImageView.setImage(ResourceUtil.getImage(ImageNm.Character_Run_Image));
+    }
+
     public void setSlideMotion(){
+        this.characterImageView.setImage(ResourceUtil.getImage(ImageNm.Sliding));
+    }
+
+    public void setJumpMotion(){
 
     }
 

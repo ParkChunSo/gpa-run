@@ -1,13 +1,14 @@
 package com.chun.gr.java.fxml_controller;
 
 import com.chun.gr.java.controller.PlayController;
-import com.chun.gr.java.controller.SpriteController;
+import com.chun.gr.java.controller.SpriteAnimation;
 import com.chun.gr.java.model.enums.ImageNm;
 import com.chun.gr.java.util.ResourceUtil;
 import javafx.animation.Animation;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 
 import java.net.URL;
@@ -35,6 +36,8 @@ public class GameController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         setUpBackground();
 
+
+
     }
 
     private void setUpBackground() {
@@ -51,8 +54,19 @@ public class GameController implements Initializable {
 
         ImageView character = new ImageView();
         character.toFront();
+        character.setFocusTraversable(true);
         gamePane.getChildren().add(character);
-        Animation spriteController = new SpriteController(character);
-        spriteController.play();
+        playController.playCharacterThread(character);
+
+        character.setOnKeyPressed(event -> playController.setOtherCharacterMotion(event.getCode()));
+
+        character.setOnKeyReleased(event -> {
+            if(event.getCode() == KeyCode.CANCEL) {
+                playController.playOnPause();
+                System.out.println("Cancel Key Released");
+            }
+            else
+                playController.setRunMotion();
+        });
     }
 }

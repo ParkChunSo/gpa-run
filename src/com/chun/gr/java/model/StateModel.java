@@ -1,12 +1,14 @@
 package com.chun.gr.java.model;
 
+import com.chun.gr.java.model.enums.State;
+
 public class StateModel {
     private String id;
     private String name;
-    private String stage;
+    private int stage;
     private int hitPoint;
     private int score;
-    private boolean isFever;
+    private State state;
 
     public StateModel(){
     }
@@ -32,11 +34,11 @@ public class StateModel {
         this.name = name;
     }
 
-    public String getStage() {
+    public int getStage() {
         return stage;
     }
 
-    public void setStage(String stage) {
+    public void setStage(int stage) {
         this.stage = stage;
     }
 
@@ -56,11 +58,11 @@ public class StateModel {
         this.score = score;
     }
 
-    public boolean isFever() {
-        return isFever;
+    public State isFever() {
+        return state;
     }
 
-    public void setFever(boolean fever) {
-        isFever = fever;
+    public void setFever(State fever) {
+        state = fever;
     }
 }
