@@ -20,7 +20,10 @@ public class GameConstant {
     public static final int CHARACTER_SLIDING_LAYOUT_X = 60;
     public static final int CHARACTER_SLIDING_LAYOUT_Y = 300;
 
-    //Duration Speed
+    // Duration Speed
     public static final int BACKGROUND_SPEED = 10;
     public static final int BACKGROUND_FRONT_SPEED = 7;
+
+    // Character
+    public static final int MAX_HIT_POINT = 100;
 }

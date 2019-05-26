@@ -1,6 +1,6 @@
 package com.chun.gr.java.model;
 
-import com.chun.gr.java.model.enums.State;
+import com.chun.gr.java.model.enums.StateType;
 
 public class StateModel {
     private String id;
@@ -8,7 +8,7 @@ public class StateModel {
     private int stage;
     private int hitPoint;
     private int score;
-    private State state;
+    private StateType stateType;
 
     public StateModel(){
     }
@@ -58,11 +58,11 @@ public class StateModel {
         this.score = score;
     }
 
-    public State isFever() {
-        return state;
+    public StateType getStateType() {
+        return stateType;
     }
 
-    public void setFever(State fever) {
-        state = fever;
+    public void setStateType(StateType stateType) {
+        this.stateType = stateType;
     }
 }

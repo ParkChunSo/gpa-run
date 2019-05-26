@@ -65,6 +65,9 @@ public class GameController implements Initializable {
                 playController.playOnPause();
                 System.out.println("Cancel Key Released");
             }
+            else if(event.getCode() == KeyCode.Z || event.getCode() == KeyCode.X){
+
+            }
             else
                 playController.setRunMotion();
         });

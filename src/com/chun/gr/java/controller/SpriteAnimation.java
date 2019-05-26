@@ -47,17 +47,6 @@ public class SpriteAnimation extends Transition {
         this.characterImageView.relocate(x, y);
         this.characterImageView.setImage(img);
     }
-    public void setRunMotion(){
-        this.characterImageView.setImage(ResourceUtil.getImage(ImageNm.Character_Run_Image));
-    }
-
-    public void setSlideMotion(){
-        this.characterImageView.setImage(ResourceUtil.getImage(ImageNm.Sliding));
-    }
-
-    public void setJumpMotion(){
-
-    }
 
     @Override
     protected void interpolate(double frac) {
