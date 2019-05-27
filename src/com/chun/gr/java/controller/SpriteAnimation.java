@@ -4,6 +4,7 @@ import com.chun.gr.java.model.constants.GameConstant;
 import com.chun.gr.java.model.enums.ImageNm;
 import com.chun.gr.java.util.ResourceUtil;
 import javafx.animation.Animation;
+import javafx.animation.AnimationTimer;
 import javafx.animation.Interpolator;
 import javafx.animation.Transition;
 import javafx.geometry.Rectangle2D;
@@ -46,6 +47,21 @@ public class SpriteAnimation extends Transition {
         this.characterImageView.setFitHeight(height);
         this.characterImageView.relocate(x, y);
         this.characterImageView.setImage(img);
+    }
+
+    public AnimationTimer createJumpAnimation(){
+        return new AnimationTimer() {
+            double ypreviousPos = characterImageView.getTranslateY();
+            int gravity = 4;
+            @Override
+            public void handle(long now) {
+                characterImageView.setTranslateY(characterImageView.getTranslateY() - gravity);
+                if(characterImageView.getTranslateY() <= -40)
+                    gravity = gravity - (2 * gravity);
+                else if(characterImageView.getTranslateY() >= ypreviousPos)
+                    this.stop();
+            }
+        };
     }
 
     @Override

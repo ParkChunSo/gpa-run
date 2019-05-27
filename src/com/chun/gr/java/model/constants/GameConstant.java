@@ -12,8 +12,10 @@ public class GameConstant {
     public static final int CHARACTER_RUN_IMAGE_WIDTH = 100;
     public static final int CHARACTER_RUN_IMAGE_HEIGHT = 150;
 
-    public static final int CHARACTER_FEVER_IMAGE_WIDTH = 150;
-    public static final int CHARACTER_FEVER_IMAGE_HEIGHT = 200;
+    public static final int CHARACTER_FEVER_LAYOUT_X = 60;
+    public static final int CHARACTER_FEVER_LAYOUT_Y = 210;
+    public static final int CHARACTER_FEVER_IMAGE_WIDTH = 120;
+    public static final int CHARACTER_FEVER_IMAGE_HEIGHT = 170;
 
     public static final int CHARACTER_SLIDING_IMAGE_WIDTH = 126;
     public static final int CHARACTER_SLIDING_IMAGE_HEIGHT = 155;
@@ -23,7 +25,11 @@ public class GameConstant {
     // Duration Speed
     public static final int BACKGROUND_SPEED = 10;
     public static final int BACKGROUND_FRONT_SPEED = 7;
+    public static final int OBJECT_SPEED_EASY = 7;
+    public static final int OBJECT_SPEED_NOMAL = 5;
+    public static final int OBJECT_SPEED_HARD = 3;
 
     // Character
     public static final int MAX_HIT_POINT = 100;
+    public static final int MAX_JUMP_Y = 100;
 }

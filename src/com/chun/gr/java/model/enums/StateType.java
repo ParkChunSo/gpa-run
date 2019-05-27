@@ -1,5 +1,5 @@
 package com.chun.gr.java.model.enums;
 
 public enum StateType {
-    RUN, FEVER, JUMP, SLIDING
+    RUN, FEVER, JUMP, SLIDING, PAUSE
 }

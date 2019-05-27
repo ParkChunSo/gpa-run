@@ -48,22 +48,41 @@ public class PlayController {
     public void setOtherCharacterMotion(KeyCode keyCode){
         switch (keyCode){
             case UP:
+                if(state.getStateType() == StateType.RUN || state.getStateType() == StateType.FEVER) {
+                    state.setStateType(StateType.JUMP);
+                    characterThread.createJumpAnimation().start();
+                }
                 break;
+
             case DOWN:
-                if(state.getStateType() == StateType.RUN || state.getStateType() == StateType.SLIDING)
-                characterThread.setOtherMotion(ResourceUtil.getImage(ImageNm.Sliding),GameConstant.CHARACTER_SLIDING_LAYOUT_X, GameConstant.CHARACTER_SLIDING_LAYOUT_Y,
-                        GameConstant.CHARACTER_SLIDING_IMAGE_WIDTH, GameConstant.CHARACTER_SLIDING_IMAGE_HEIGHT);
-                break;
-            case Z:
-                if(state.getHitPoint() == GameConstant.MAX_HIT_POINT){
-                    state.setHitPoint(0);
-                    characterThread.setOtherMotion(ResourceUtil.getImage(ImageNm.fever),GameConstant.CHARACTER_SLIDING_LAYOUT_X, GameConstant.CHARACTER_SLIDING_LAYOUT_Y,
+                if(state.getStateType() == StateType.RUN || state.getStateType() == StateType.SLIDING) {
+                    state.setStateType(StateType.SLIDING);
+                    characterThread.setOtherMotion(ResourceUtil.getImage(ImageNm.Sliding), GameConstant.CHARACTER_SLIDING_LAYOUT_X, GameConstant.CHARACTER_SLIDING_LAYOUT_Y,
                             GameConstant.CHARACTER_SLIDING_IMAGE_WIDTH, GameConstant.CHARACTER_SLIDING_IMAGE_HEIGHT);
                 }
                 break;
-            case X:
-                characterThread.setOtherMotion(ResourceUtil.getImage(ImageNm.fever),GameConstant.CHARACTER_SLIDING_LAYOUT_X, GameConstant.CHARACTER_SLIDING_LAYOUT_Y,
-                        GameConstant.CHARACTER_SLIDING_IMAGE_WIDTH, GameConstant.CHARACTER_SLIDING_IMAGE_HEIGHT);
+
+            case Z:
+                if(state.getHitPoint() == GameConstant.MAX_HIT_POINT){
+                    state.setHitPoint(0);
+                    state.setStateType(StateType.FEVER);
+                    characterThread.setOtherMotion(ResourceUtil.getImage(ImageNm.fever),GameConstant.CHARACTER_FEVER_LAYOUT_X, GameConstant.CHARACTER_FEVER_LAYOUT_Y,
+                            GameConstant.CHARACTER_FEVER_IMAGE_WIDTH, GameConstant.CHARACTER_FEVER_IMAGE_HEIGHT);
+                }
+                break;
+
+            case ESCAPE:
+                if(state.getStateType().equals(StateType.PAUSE)){
+                    state.setStateType(StateType.RUN);
+                    backgroundThread1.play();
+                    backgroundThread2.play();
+                    characterThread.play();
+                }else{
+                    state.setStateType(StateType.PAUSE);
+                    backgroundThread1.pause();
+                    backgroundThread2.pause();
+                    characterThread.pause();
+                }
                 break;
         }
     }
@@ -74,24 +93,50 @@ public class PlayController {
                 GameConstant.CHARACTER_RUN_IMAGE_WIDTH, GameConstant.CHARACTER_RUN_IMAGE_HEIGHT);
     }
 
-    public void pause(){
-        backgroundThread1.pause();
-        backgroundThread2.pause();
-        characterThread.pause();
-    }
-
-    public void playOnPause(){
-        backgroundThread1.play();
-        backgroundThread2.play();
-        characterThread.play();
-    }
-
     private void transformToFever(){
 
     }
 
-    private void createJelly(){
-
+    private KeyFrame createJelly(ImageView jelly, int x, int y, int width, int height, int speed){
+//        KeyFrame keyFrame = new KeyFrame(Duration.INDEFINITE, )
+//        KeyFrame keyFrame2 = new KeyFrame(Duration.seconds(0.002), new EventHandler<ActionEvent>() {
+//
+//            public void handle(ActionEvent event) {
+//                double imageMinX = image_jelly.getBoundsInParent().getMinX();
+//                double imageMaxY = image_jelly.getBoundsInParent().getMaxY();
+//                if (imageMinX > Game_Maincharacter_ImageView.getBoundsInParent().getMinX()
+//                        && imageMinX < Game_Maincharacter_ImageView.getBoundsInParent().getMaxX()
+//                        && imageMaxY < Game_Maincharacter_ImageView.getBoundsInParent().getMaxY()
+//                        && imageMaxY > Game_Maincharacter_ImageView.getBoundsInParent().getMinY()) {
+//                    image_jelly.setImage(null);
+//                    image_jelly.setLayoutX(0);
+//                    Game_GageBar_ImageView.setFitWidth(Game_GageBar_ImageView.getFitWidth() + 3);
+//                    Game_Score_Label.setText("" + control.setJellySocre());
+//                    if (fever == true) {
+//                        Game_GageBar_ImageView.setFitWidth(Game_GageBar_ImageView.getFitWidth() - 6);
+//
+//                    }
+//
+//                }
+//                if (Game_GageBar_ImageView.getFitWidth() > 300) {
+//
+//                    splite_image.seting_fever_sprite(Game_Maincharacter_ImageView, animation, splite_image);
+//                    fever = true;
+//                }
+//                if (Game_GageBar_ImageView.getFitWidth() < 50) {
+//                    fever = false;
+//                    animation.stop();
+//                    splite_image.seting_run_sprite(Game_Maincharacter_ImageView, animation, splite_image);
+//                    animation.play();
+//                }
+//                image_jelly.setTranslateX(image_jelly.getTranslateX() + dx);
+//            }
+//        });
+//        timeLine_jelly.getKeyFrames().add(move_jelly);
+//        timeLine_jelly.play();
+//        Game_pane.getChildren().add(image_jelly);
+//        i++;
+        return null;
     }
 
     private void createBottomObstacle(){

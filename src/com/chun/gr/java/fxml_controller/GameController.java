@@ -61,15 +61,9 @@ public class GameController implements Initializable {
         character.setOnKeyPressed(event -> playController.setOtherCharacterMotion(event.getCode()));
 
         character.setOnKeyReleased(event -> {
-            if(event.getCode() == KeyCode.CANCEL) {
-                playController.playOnPause();
-                System.out.println("Cancel Key Released");
-            }
-            else if(event.getCode() == KeyCode.Z || event.getCode() == KeyCode.X){
-
-            }
-            else
+            if(event.getCode() == KeyCode.DOWN){
                 playController.setRunMotion();
+            }
         });
     }
 }

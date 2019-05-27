@@ -8,7 +8,7 @@ public class StateModel {
     private int stage;
     private int hitPoint;
     private int score;
-    private StateType stateType;
+    private StateType stateType = StateType.RUN;
 
     public StateModel(){
     }
