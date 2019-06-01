@@ -17,6 +17,7 @@ public class PlayController {
     private StateModel state;
     private Timeline backgroundThread1;
     private Timeline backgroundThread2;
+    private Timeline objectThread;
     private SpriteAnimation characterThread;
 
     public PlayController() {
@@ -145,5 +146,13 @@ public class PlayController {
 
     private void createUpObstacle(){
 
+    }
+
+    public StateModel getState(){
+        return state;
+    }
+
+    public void setStateType(StateType stateType){
+        state.setStateType(stateType);
     }
 }
